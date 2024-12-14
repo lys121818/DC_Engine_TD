@@ -1,0 +1,128 @@
+namespace Lua
+{
+	static int TransformComponent_Get_X(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		lua_pushnumber(pState, static_cast<float>(pClass->Get_X()));
+		return 1;
+	}
+
+	static int TransformComponent_Get_Y(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		lua_pushnumber(pState, static_cast<float>(pClass->Get_Y()));
+		return 1;
+	}
+
+	static int TransformComponent_Get_Width(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		lua_pushnumber(pState, static_cast<int>(pClass->Get_Width()));
+		return 1;
+	}
+
+	static int TransformComponent_Get_Height(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		lua_pushnumber(pState, static_cast<int>(pClass->Get_Height()));
+		return 1;
+	}
+
+	static int TransformComponent_Get_Angle(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		lua_pushnumber(pState, static_cast<float>(pClass->Get_Angle()));
+		return 1;
+	}
+
+	static int TransformComponent_Set_X(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		float x = static_cast<float>(luaL_checknumber(pState,2));
+		pClass->Set_X(x);
+		lua_pop(pState, 2);
+		return 0;
+	}
+
+	static int TransformComponent_Set_Y(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		float y = static_cast<float>(luaL_checknumber(pState,2));
+		pClass->Set_Y(y);
+		lua_pop(pState, 2);
+		return 0;
+	}
+
+	static int TransformComponent_Set_Width(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		int width = static_cast<int>(luaL_checknumber(pState,2));
+		pClass->Set_Width(width);
+		lua_pop(pState, 2);
+		return 0;
+	}
+
+	static int TransformComponent_Set_Height(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		int height = static_cast<int>(luaL_checknumber(pState,2));
+		pClass->Set_Height(height);
+		lua_pop(pState, 2);
+		return 0;
+	}
+
+	static int TransformComponent_Set_Angle(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		float angle = static_cast<float>(luaL_checknumber(pState,2));
+		pClass->Set_Angle(angle);
+		lua_pop(pState, 2);
+		return 0;
+	}
+
+	static int TransformComponent_TryMove(lua_State* pState)
+	{
+		auto pClass = reinterpret_cast<TransformComponent*>(
+			lua_touserdata(pState, 1));
+		float x = static_cast<float>(luaL_checknumber(pState, 2));
+		float y = static_cast<float>(luaL_checknumber(pState, 3));
+		pClass->TryMove(x, y);
+		lua_pop(pState, 3);
+		return 0;
+	}
+
+}
+
+void TransformComponent::RegisterWithScript()
+{
+	auto& pGameState = DC_Engine::ApplicationLayer::GetInstance()->GetGame().GetCurrentState();
+	auto& scripting = pGameState.GetScriptingManager();
+	scripting.GetGlobal("g_sandbox");
+	scripting.GetFromTable("GameObjects");
+	scripting.GetFromTable(GetOwner()->GetId());
+	scripting.CreateTable();
+	scripting.AddToTable("this", this);
+	scripting.AddToTable("Get_X", Lua::TransformComponent_Get_X);
+	scripting.AddToTable("Get_Y", Lua::TransformComponent_Get_Y);
+	scripting.AddToTable("Get_Width", Lua::TransformComponent_Get_Width);
+	scripting.AddToTable("Get_Height", Lua::TransformComponent_Get_Height);
+	scripting.AddToTable("Get_Angle", Lua::TransformComponent_Get_Angle);
+	scripting.AddToTable("Set_X", Lua::TransformComponent_Set_X);
+	scripting.AddToTable("Set_Y", Lua::TransformComponent_Set_Y);
+	scripting.AddToTable("Set_Width", Lua::TransformComponent_Set_Width);
+	scripting.AddToTable("Set_Height", Lua::TransformComponent_Set_Height);
+	scripting.AddToTable("Set_Angle", Lua::TransformComponent_Set_Angle);
+	scripting.AddToTable("TryMove", Lua::TransformComponent_TryMove);
+	scripting.AddToTable("TransformComponent");
+	scripting.PopAll();
+}

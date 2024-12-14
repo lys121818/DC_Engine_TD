@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="inc\DC_OpenGLWindow.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_SDLWindow.h">
+      <Filter>Platform\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ActionResult.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ApplicationLayer.h">
+      <Filter>AppLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\WindowConfig.h">
+      <Filter>Platform\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\WindowManager.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_SDLRenderer.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\EngineGraphics.h">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\EngineTexture.h">
+      <Filter>Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_SDLTexture2D.h">
+      <Filter>Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_Color.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_Rect.h">
+      <Filter>Math\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Input.h">
+      <Filter>EventSystem\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_SDLAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\GameObject.h">
+      <Filter>Game\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\Tinyxml2\tinyxml2.h">
+      <Filter>Utilities\Tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Log.h">
+      <Filter>Utilities\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_ObjectComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ObjectFactory.h">
+      <Filter>Game\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_View.h">
+      <Filter>Game\VIew</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\GameStateMachine.h">
+      <Filter>Game\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\GameState.h">
+      <Filter>Game\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\EventManager.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_Process.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ProcessManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_Event.h">
+      <Filter>EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ResourceFile.h">
+      <Filter>Utilities\ResourceFile</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Resource.h">
+      <Filter>Utilities\ResourceFile</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lualib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lua.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lua.hpp">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\luaconf.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\lauxlib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ScriptingManager.h">
+      <Filter>LuaScript</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_StaticBodyComponent.h">
+      <Filter>Game\Component\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_DynamicBodyComponent.h">
+      <Filter>Game\Component\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TriggerBoxComponent.h">
+      <Filter>Game\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\EventActionComponent.h">
+      <Filter>Game\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ImageRenderComponent.h">
+      <Filter>Game\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SoundComponent.h">
+      <Filter>Game\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TransformComponent.h">
+      <Filter>Game\Component\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Box2DStaticBody.h">
+      <Filter>Game\Physics\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_ContactListener.h">
+      <Filter>Game\Physics\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DC_PhysicsManager.h">
+      <Filter>Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Box2DDynamicBody.h">
+      <Filter>Game\Physics\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Box2DPhysics.h">
+      <Filter>Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TileSet.h">
+      <Filter>Game\TileSets</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Layer.h">
+      <Filter>Game\TileSets</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Level.h">
+      <Filter>Game\TileSets</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TileSetComponent.h">
+      <Filter>Game\Component\TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Box2DContactListener.h">
+      <Filter>Game\Physics\Listener</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DC_OpenGLWindow.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_SDLWindow.cpp">
+      <Filter>Platform\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WindowManager.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_SDLRenderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EngineGraphics.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_SDLTexture2D.cpp">
+      <Filter>Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>EventSystem\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ApplicationLayer.cpp">
+      <Filter>AppLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_Audio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_SDLAudio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\Tinyxml2\tinyxml2.cpp">
+      <Filter>Utilities\Tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>Utilities\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_ObjectComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>Game\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectFactory.cpp">
+      <Filter>Game\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameState.cpp">
+      <Filter>Game\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventManager.cpp">
+      <Filter>EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_Rect.cpp">
+      <Filter>Math\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_Process.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProcessManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceFile.cpp">
+      <Filter>Utilities\ResourceFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptingManager.cpp">
+      <Filter>LuaScript</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageRenderComponent.cpp">
+      <Filter>Game\Component\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundComponent.cpp">
+      <Filter>Game\Component\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformComponent.cpp">
+      <Filter>Game\Component\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerBoxComponent.cpp">
+      <Filter>Game\Component\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Box2DStaticBody.cpp">
+      <Filter>Game\Physics\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_PhysicsManager.cpp">
+      <Filter>Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Box2DDynamicBody.cpp">
+      <Filter>Game\Physics\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Box2DPhysics.cpp">
+      <Filter>Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventActionComponent.cpp">
+      <Filter>Game\Component\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileSet.cpp">
+      <Filter>Game\TileSets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Layer.cpp">
+      <Filter>Game\TileSets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Level.cpp">
+      <Filter>Game\TileSets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TileSetComponent.cpp">
+      <Filter>Game\Component\TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Box2DContactListener.cpp">
+      <Filter>Game\Physics\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DC_View.cpp">
+      <Filter>Game\VIew</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{26455338-bfc8-42af-9a98-44b7f2ef548e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{630270dd-5b5f-4c97-b799-39d0f1b3b331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{e2d75410-0014-4f4b-b8f1-f5c2b3c03feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{d8825e37-287f-4e57-bdf0-9564811bdd5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{80114c0b-bc1a-4971-bd78-a4753e5b7751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\SDL">
+      <UniqueIdentifier>{bd929dfe-d163-4dfa-831e-9492ebf90448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{c4b9218a-0d11-42fe-b553-4a11d6e6bdfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventSystem">
+      <UniqueIdentifier>{54b47d48-5e74-40fb-9854-411f0f175d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer">
+      <UniqueIdentifier>{34cf5ac0-e046-4fec-b5bc-0d4428739a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Texture">
+      <UniqueIdentifier>{2730556d-c08c-4838-b18c-616cc961cf48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{112e6820-c0c7-45f8-8909-9b72a7951658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventSystem\Input">
+      <UniqueIdentifier>{91caee2f-1f3e-4ae0-a852-31c51fe3d373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8f045003-c53c-40f9-9831-905a8ef96a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObject">
+      <UniqueIdentifier>{67f58dfd-74be-49f0-a572-9eb55bacfcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Log">
+      <UniqueIdentifier>{7c9766d3-8398-41d5-913a-b159000c3ef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Tinyxml2">
+      <UniqueIdentifier>{881d97cf-1f8b-4fdb-bdf4-88a7ad0495b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component">
+      <UniqueIdentifier>{e065f04c-9618-4a58-b813-ddc4641dc7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\VIew">
+      <UniqueIdentifier>{d14d8683-e630-42ec-a558-1f1ebd6e67c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Layers">
+      <UniqueIdentifier>{48ff97b9-010a-4899-8ffb-7ee767a6152e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppLayer">
+      <UniqueIdentifier>{19626618-5eac-47f3-8e7d-45370ca90e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Config">
+      <UniqueIdentifier>{06cb52b1-c3b0-40bb-80ea-bc4033757951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Shape">
+      <UniqueIdentifier>{3d4f242a-f063-4a78-83ae-65a8333d9385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\ResourceFile">
+      <UniqueIdentifier>{e6f8fe1e-514b-48de-9cc3-7aa682e77fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaScript">
+      <UniqueIdentifier>{324445f7-0659-4189-95bf-6ab38a9fba15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{f21559b6-52b7-4569-9a26-1085431993be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\Game">
+      <UniqueIdentifier>{29001ce5-8dc4-4673-9abb-a3d3485631a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\Body">
+      <UniqueIdentifier>{de9466ce-98a8-4983-853e-c6319bdb691b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Physics">
+      <UniqueIdentifier>{8ee99113-0ad8-4d83-ab13-7f963bc9f671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Physics\Body">
+      <UniqueIdentifier>{c19882bd-7a10-4b62-8ec8-0131cf9e0603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Physics\Listener">
+      <UniqueIdentifier>{e47b9cfd-6a10-447c-ac72-280ec32bcac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\TileSets">
+      <UniqueIdentifier>{27b5ea8b-2bb5-4f14-8055-61bcd5876287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\TileMap">
+      <UniqueIdentifier>{5cdba8d2-82b3-431c-916d-795fab5538f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

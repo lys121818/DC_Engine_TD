@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameObject name ="Button">
+	<TransformComponent>
+			<Position x = "150" y = "650" />
+			<Dimensions width = "130" height = "35" />
+	</TransformComponent>
+	
+	<ImageRenderComponent>
+		<State name ="Normal">
+			<ImageSource fileName = "Buttons.png"/>
+			<Frame x = "0" y = "0" />
+			<Dimensions width = "100" height = "40" />
+		</State>
+
+		<State name ="Hover">
+			<ImageSource fileName = "Buttons.png"/>
+			<Frame x = "100" y = "0" />
+			<Dimensions width = "100" height = "40" />
+		</State>
+
+		<State name ="Press">
+			<ImageSource fileName = "Buttons.png"/>
+			<Frame x = "100" y = "40" />
+			<Dimensions width = "100" height = "40" />
+		</State>
+
+		<State name ="Disable">
+			<ImageSource fileName = "Buttons.png"/>
+			<Frame x = "0" y = "40" />
+			<Dimensions width = "100" height = "40" />
+		</State>
+	</ImageRenderComponent>
+
+	<SoundComponent>
+		<State name = "Hover">
+			<SoundSource fileName = "Move.wav"/>
+		</State>
+		<State name = "Press">
+			<SoundSource fileName = "Select.wav"/>
+		</State>
+	</SoundComponent>
+
+	<EventActionComponent>
+		<EventId id = "0x2af98568" />
+	</EventActionComponent>
+</GameObject>

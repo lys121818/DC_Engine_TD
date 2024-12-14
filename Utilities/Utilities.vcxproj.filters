@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{4939b3e0-acc8-43f4-8464-cd4ec11b128f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RNG">
+      <UniqueIdentifier>{9121be2d-388f-4f30-8482-418a46f7665a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryLeakDetector">
+      <UniqueIdentifier>{786a0c04-382d-4b92-8118-70536d8a66cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem">
+      <UniqueIdentifier>{287e44bd-807e-4d87-b1e6-92a86939829e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{faee4acc-872e-48d1-8233-1ae64aa7a992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\Hash">
+      <UniqueIdentifier>{5a4f0f84-1009-4002-a833-0cc4f452336b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BleachNew.cpp">
+      <Filter>MemoryLeakDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Random.cpp">
+      <Filter>RNG</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileSystem.cpp">
+      <Filter>FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\Hash.h">
+      <Filter>Algorithm\Hash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\BleachNewConfig.h">
+      <Filter>MemoryLeakDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BleachNew.h">
+      <Filter>MemoryLeakDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Random.h">
+      <Filter>RNG</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FileSystem.h">
+      <Filter>FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\FNV.h">
+      <Filter>Algorithm\Hash</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

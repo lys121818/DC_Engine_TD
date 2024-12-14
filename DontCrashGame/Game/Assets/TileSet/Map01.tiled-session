@@ -1,0 +1,63 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Stage_01.tmx",
+    "expandedProjectPaths": [
+        ".",
+        "Tiles"
+    ],
+    "fileStates": {
+        "Stage_01.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 540,
+                "y": 457
+            }
+        },
+        "Stage_02.tmx": {
+            "scale": 1.32666015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 511.8115568641885,
+                "y": 383.67022451232975
+            }
+        },
+        "Tiles/EnemyEndPoint.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/EnemyStartPoint.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiles/TileSet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "D:/GAP_301/WorkSpace/24FA-GAP301_O1/ylee91/DontCrashEngine/DontCrashGame/Game/Assets/Images",
+    "map.height": 24,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 32,
+    "map.tileWidth": 32,
+    "map.width": 32,
+    "openFiles": [
+        "Tiles/TileSet.tsx",
+        "Stage_01.tmx",
+        "Tiles/EnemyStartPoint.tsx",
+        "Tiles/EnemyEndPoint.tsx",
+        "Stage_02.tmx"
+    ],
+    "project": "Map01.tiled-project",
+    "recentFiles": [
+        "Tiles/TileSet.tsx",
+        "Stage_02.tmx",
+        "Tiles/EnemyEndPoint.tsx",
+        "Tiles/EnemyStartPoint.tsx",
+        "Stage_01.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

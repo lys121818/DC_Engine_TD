@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="LuaScripts">
+      <UniqueIdentifier>{b7f4a68f-0cc1-4b5c-94dd-79afc3bb45ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

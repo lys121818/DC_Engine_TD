@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\DontCrashApp.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SandBox.cpp">
+      <Filter>Game\Scenes\SandBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerView.cpp">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameView.cpp">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyView.cpp">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CreateGameObjectEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DelayProcess.cpp">
+      <Filter>Game\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriggerBoxProcess.cpp">
+      <Filter>Game\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AttackProcess.cpp">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LookAroundProcess.cpp">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MoveProcess.cpp">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BulletView.cpp">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpawnBulletEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DestroyGameObjectEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayMusicEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ButtonPressedEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EndZone.cpp">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EndGameEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlaySoundEvent.cpp">
+      <Filter>Game\Events</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{da0fbab3-0b92-4192-833c-6075f765db59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{137afcac-c7eb-47cb-ae00-d540d2d78901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{3d1c12f9-b525-486d-8c8c-32ccc92192bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\XMLFile">
+      <UniqueIdentifier>{08eb47a3-345e-4977-8c49-1d3bc544815e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\SandBox">
+      <UniqueIdentifier>{1942c1be-cae1-4cc1-a9d5-feebe80cf9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\SandBox\Views">
+      <UniqueIdentifier>{5f73dc00-7b14-4460-a8a9-d5d64e78658b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Events">
+      <UniqueIdentifier>{d5193176-0757-4c67-b5a3-107334ce5a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Processes">
+      <UniqueIdentifier>{616ce8be-1105-445c-ab88-b0b34926c540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Processes\EnemyProcesses">
+      <UniqueIdentifier>{8b48b1f5-6a29-4abb-a668-fecab3a0df92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scripts">
+      <UniqueIdentifier>{b09ab9af-e876-4404-b515-0781e15735a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\DontCrashApp.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerView.h">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SandBox.h">
+      <Filter>Game\Scenes\SandBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameView.h">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EnemyView.h">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CreateGameObjectEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DelayProcess.h">
+      <Filter>Game\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriggerBoxProcess.h">
+      <Filter>Game\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AttackProcess.h">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LookAroundProcess.h">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MoveProcess.h">
+      <Filter>Game\Processes\EnemyProcesses</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BulletView.h">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpawnBulletEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DestroyGameObjectEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayMusicEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ButtonPressedEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EndZone.h">
+      <Filter>Game\Scenes\SandBox\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EndGameEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlaySoundEvent.h">
+      <Filter>Game\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GameObjects\MusicPlayButton.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\Player.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\Enemy.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\Spawner.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\EnemySpawnButton.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\ExitButton.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\Bullet.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+    <Xml Include="GameObjects\EndZone.xml">
+      <Filter>Game\XMLFile</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game\Assets\Scripts\Script.lua">
+      <Filter>Game\Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>
