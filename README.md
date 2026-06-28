@@ -6,9 +6,9 @@ A custom 2D game engine written in C++20, built on top of SDL2, Box2D, and Lua. 
 
 ## Requirements
 
-- **Visual Studio 2022** (toolset `v143`)
+- **Visual Studio 2022**
 - **C++20**
-- Windows (the engine uses Win32 APIs in several places)
+- Windows
 - All third-party libraries are vendored under `DontCrashEngine/libs/` — no package manager needed
 
 ---
@@ -16,7 +16,7 @@ A custom 2D game engine written in C++20, built on top of SDL2, Box2D, and Lua. 
 ## Building
 
 1. Open `DontCrashEngine.sln` in Visual Studio 2022.
-2. Select **Debug** or **Release**, **x86** or **x64**.
+2. Select solution build **Debug** or **Release**, **x86** or **x64**.
 3. Build the solution (`Ctrl+Shift+B`). Project dependencies are declared in the `.sln` so they build in the correct order.
 4. GluaGen runs automatically as a pre-build step for `DontCrashEngine` and `DontCrashGame`. If you modify any `LUA_*` macros in a header, the matching `.gen` file is regenerated before the rest of the build proceeds.
 5. Run `ResourcePacker` once to produce the asset pack before launching `DontCrashGame`.
